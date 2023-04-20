@@ -1,0 +1,306 @@
+*{
+    border: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+.container{
+    padding: 0 140px;
+}
+nav{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #7B7B7B29;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+nav h1{
+    color: #424242;
+    font-size:40px;
+    letter-spacing:0;
+}
+nav h1 span{
+    color:#00A5EC;
+}
+.con1{
+    background-color: #f7f7f7;
+    padding: 36px 0;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+a:visited,a:link,a:active{
+    text-decoration: none;
+}
+.button a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    
+}
+.button a i{
+    background-color:#00A5EC; 
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.todo{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:15px;
+}
+.card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    width:352px;
+    max-width: 32%;
+    min-height: 360px;
+}
+.card:hover{
+    box-shadow: 0px 0px 20px #67676729;
+}
+.cardhead{
+    border-bottom: 1px solid #EDEDED;
+    padding:34px 30px 30px 30px;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #00A5EC;
+}
+.cardbody{
+    padding: 30px;
+
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap:13px;
+    margin-bottom: 25px;
+}
+.item i {
+    font-size: 32px;
+    width: 30px;
+    height: 32px;
+}
+.item i.fa-square-check {
+    color: #c2c2c2;
+    background: #F7F7F7;
+}
+.item i.fa-square {
+    color: #ededed;
+    background: #F7F7F7;
+}
+.item input{
+    width: 30px;
+height: 30px;
+background: #F7F7F7 0% 0% no-repeat padding-box;
+border: 1px solid #EDEDED;
+border-radius: 4px;
+/* appearance:none; */
+}
+.item input:checked{
+    background: #C2C2C2 0% 0% no-repeat padding-box;
+    color:#F7F7F7;
+}
+.item label{
+    letter-spacing: 0px;
+color: #424242;
+font-size: 18px;
+}
+label.strike{
+    text-decoration: line-through;
+color: #C2C2C2;
+}
+.con2{
+    position: relative;
+}
+.popup-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+.popupcard {
+    max-width: 500px;
+    margin: 180px auto auto;
+    width: 100%;
+    min-height: 250px;
+}
+.popupcard .cardhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.popupcard .cardhead h1{
+    letter-spacing: 0px;
+    color: #404040;
+    font-size: 22px;
+}
+.popupcard .cardhead i{
+    color:#858585;
+    font-size: 25px;
+}
+.bluebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    letter-spacing: 0px;
+color: #FFFFFF;
+font-size: 18px;
+background: #00A5EC 0% 0% no-repeat padding-box;
+border-radius: 4px;
+width: 180px;
+height: 48px;
+margin-left: auto;
+margin-right: 0;
+}
+.cardbody input[type="text"] {
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding: 10px 14px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #858585;
+}
+.backbutton a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.backbutton i {
+    background: #424242;
+    color:#FFFFFF;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.btnsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+.page3 .todo {
+    justify-content: center;
+}
+.page3 .todo .card {
+    width: 500px;
+    max-width: 100%;
+    min-height: 338px;
+}
+.page3 .todo .card .cardhead{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Mobile View */
+
+@media screen and (min-width :280px) and (max-width:500px){
+    .container{
+        max-width:100%;
+        padding: 0 15px;
+    }
+    nav{
+        padding: 15px 0;
+    }
+    nav h1{
+        color: #424242;
+        font-size:20px;
+        letter-spacing:0;
+    }
+    .hide{
+        display: none;
+    }
+    .con1{
+        padding: 15px 0;
+    }
+    .button{
+        justify-content: center;
+    }
+    .button a{
+        margin-bottom: 20px;
+
+    }
+    .button a i{
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    }
+    .todo{
+        flex-direction: column;
+    }  
+    .card {
+        max-width: 100%;
+    } 
+    .popup-bg{
+        padding: 0 15px;
+    }
+    .backbutton {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .backbutton a{
+        align-items: center;
+    gap: 7px;
+    margin-bottom: 0;
+    }
+    .backbutton i {  
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .btnsection {
+        justify-content: center;
+        position: relative;
+    }
+    
+}
